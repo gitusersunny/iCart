@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans&family=Poppins:wght@200&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      .sproduct .row img{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        object-fit: cover;
+      }
+      .sproduct select{
+          display: block;
+          padding: 5px 10px;
+      }
+       .sproduct input{
+           width: 50px;
+           height: 40px;
+           padding-left: 10px;
+           font-size: 16px;
+           margin-right: 10px;
+
+       }
+       .buy-btn{
+           background: #fb774b;
+           opacity: 1;
+           transition: 0.3s all;
+       }
+    </style>
+    
+</head>
+<body>
+      
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
+        <div class="container">
+          <h3 class="head">iCart</h3>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fa-solid fa-sliders"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="shop.html">Shop</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign In</a>
+              </li>
+               
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log In</a>
+              </li>
+                
+              <li class="nav-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </li>
+               
+
+          </div>
+        </div>
+      </nav>
+        
+      <section class="container sproduct my-3 pt-5">
+        <div class="row mt-5">
+          <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid" src="images/featured1.png" alt="">
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-12">
+              <h6>product details</h6>
+              <h3>iPhone 13 pro</h3>
+              <h4> Rs 1,19,990</h4>
+              <select class="my-3">
+                  <option>select color</option>
+                  <option>white</option>
+                  <option>silver</option>
+                  <option>black</option>
+              </select>
+              <input type="number" name="" value="1">
+              <button class="buy-btn">Add To Cart</button>
+              <h4 class="mt-3">Description:</h4>
+              <span>15 cm (6.1-inch) Super Retina XDR display with ProMotion for a faster, more responsive feel
+                Cinematic mode adds shallow depth of field and shifts focus automatically in your videos
+                Pro camera system with new 12MP Telephoto, Wide and Ultra Wide cameras; LiDAR Scanner; 6x optical zoom range; macro photography; Photographic Styles, ProRes video, Smart HDR 4, Night mode, Apple ProRAW, 4K Dolby Vision HDR recording
+                12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording
+                A15 Bionic chip for lightning-fast performance
+                Up to 22 hours of video playback
+                Durable design with Ceramic Shield
+                Industry-leading IP68 water resistance
+                iOS 15 packs new features to do more with iPhone than ever before
+                Supports MagSafe accessories for easy attachment and faster wireless charging</span>
+          </div>
+
+        </div>
+      </section>
+
+
+      <footer class="container my-5">
+        <div class='container'>
+            <div class='row'>
+                <div class='col-12 col-lg-4 mx-auto'>
+                        
+                            <h2>Follow Us</h2>
+                           <div class='row'>
+                               <div class='col-3 mx-auto a'>
+                                   <a href="/"><i class="fa-brands fa-facebook fontawesome-style"></i></a>
+                               </div>
+                               <div class='col-3 mx-auto a'>
+                                   <a href="/"><i class='fab fa-instagram fontawesome-style'></i></a>
+                               </div>
+                               <div class='col-3 mx-auto a'>
+                                   <a href="/"><i class='fab fa-youtube fontawesome-style'></i></a>
+                               </div>
+                               <div class='col-3 mx-auto a'>
+                                   <a href="/"><i class='fab fa-telegram fontawesome-style'></i></a>
+                               </div>
+                           </div>
+                    <hr>
+                    <div>
+                      <p class='text-center w-100'>call +917264926975</p>
+                        <p class='text-center w-100'>Copyright @ 2022 iCart All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
